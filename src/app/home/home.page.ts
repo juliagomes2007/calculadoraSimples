@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
+
 export class HomePage {
 
   constructor() {}
 
+  n1 = '';
+  n2 = '';
+  res = 0;
+
+  somar(){
+    this.res = parseFloat(this.n1) + parseFloat(this.n2);
+  }
 }
